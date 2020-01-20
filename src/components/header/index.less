@@ -1,0 +1,48 @@
+.header {
+    height: 80px;
+    background-color: #fff;
+    .headerTop {
+        height: 40px;
+        text-align: right;
+        line-height: 40px;
+        padding-right: 30px;
+        border-bottom: 1px solid #1da57a;
+        .username {
+            margin-right: 10px;
+        }
+    }
+    
+    .headerBottom {
+        display: flex;
+        align-items: center;
+        .headerBottom-left {
+            width: 25%;
+            position: relative;
+            line-height: 40px;
+            font-size: 20px;
+            text-align: center;
+            &::after {
+                content:"";
+                position: absolute;
+                right: 50%;
+                top: 90%;
+                transform: translateX(50%);
+                border-top:20px solid #fff;
+                border-bottom:20px solid transparent;
+                border-left:20px solid transparent;
+                border-right:20px solid transparent;
+            }
+        }
+        .headerBottom-right {
+            text-align: right;
+            line-height: 40px;
+            width: 75%;
+            margin-right: 30px;
+            img {
+                width: 30px;
+                height: 20px;
+                margin: 0 10px;
+            }
+        }
+    }
+}
